@@ -1,0 +1,16 @@
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Reg Number</th>
+            <th>Reg Date</th>
+        </tr>        
+    </thead>
+    <tbody>
+        <tr *ngFor="let d of data">
+            <td>{{d.name}}</td>
+            <td>{{d.regnumber}}</td>
+            <td>{{d.regdate}}</td>
+        </tr>
+    </tbody>
+</table>
