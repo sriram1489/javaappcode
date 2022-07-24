@@ -16,4 +16,8 @@ export class HomeComponent implements OnInit {
     this.homeService.getCustomers().subscribe(res => this.data = res);
   }
 
+  editCustomer(cust) {
+    console.log('Edit data for customer : ' + cust.name + ' ' + cust.regnumber + ' ' + cust.regdate)
+  }
+
 }
